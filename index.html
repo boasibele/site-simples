@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Lista de Tarefas e Tabela de Estudos</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body class="light-theme">
+
+  <h1>Lista de tarefas</h1>
+  <p id="msg">Tarefas atuais:</p>
+  <ul>
+    <li class="list">Adicionar estilos visuais</li>
+    <li class="list">Adicionar temas claros e escuros</li>
+    <li>Ativar a mudança do tema</li>
+  </ul>
+
+  <div>
+    <button class="btn">Escuro</button>
+  </div>
+
+  <!-- 📚 Seção da Tabela de Estudos -->
+  <section id="tabela-estudos">
+    <h2>📘 Tabela de Estudos - Concursos Públicos</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Horário</th>
+          <th>Segunda</th>
+          <th>Terça</th>
+          <th>Quarta</th>
+          <th>Quinta</th>
+          <th>Sexta</th>
+          <th>Sábado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>08:00 - 09:00</td>
+          <td>Direito Administrativo <button onclick="toggleDone(this)">✔</button></td>
+          <td>Direito Constitucional <button onclick="toggleDone(this)">✔</button></td>
+          <td>Português <button onclick="toggleDone(this)">✔</button></td>
+          <td>Matemática <button onclick="toggleDone(this)">✔</button></td>
+          <td>Informática <button onclick="toggleDone(this)">✔</button></td>
+          <td>Revisão Geral <button onclick="toggleDone(this)">✔</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <script src="app.js"></script>
+  <noscript>Você precisa habilitar o JavaScript para visualizar o site completo.</noscript>
+</body>
+</html>

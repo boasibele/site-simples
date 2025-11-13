@@ -1,0 +1,59 @@
+body{
+   font-family:monospace;
+}
+ul{
+   font-family:helvética;
+}
+li {
+  list-style: circle;
+}
+.list {
+  list-style: square;
+}
+#msg{
+   font-family: monospace;
+}
+.light-theme {
+  color: #000000;
+  background: #FFC0CBff;
+}
+.dark-theme {
+  color: #FFC0CBff;
+  background: #000000;
+}
+:root{
+   --green:#FFC0CBff;
+   --white:#ffffff;
+   --black:#000000;
+}
+*{
+   color:var(--fontColor);
+   font-family:helvetica;
+}
+body{
+   background:var(--bg);
+}
+.light-theme{
+   --bg: var(--pink);
+   --fontColor: var(--black);
+   --btnBg:var(--black);
+   --btnfontColor:var(--white);
+}
+.dark-theme{
+   --bg: var(--black);
+   --fontColor: var(--pink);
+   --btnBg:var(--white);
+   --btnfontColor:var(--black);
+}
+.btn{
+   position: absolute;
+   top: 20px;
+   left: 250px;
+   height: 50px;
+   width: 50px;
+   border-radius: 50%;
+   border: none;
+   color:var(--btnfontColor);
+   background-color:var(--btnBg);
+}
+.btn:focus{outline-style:none;}
