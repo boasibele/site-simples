@@ -1,59 +1,112 @@
-body{
-   font-family:monospace;
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  transition: background 0.3s, color 0.3s;
 }
-ul{
-   font-family:helvética;
+
+h2 {
+  margin-top: 20px;
+  font-size: 1.8rem;
 }
-li {
-  list-style: circle;
+
+.theme-toggle {
+  margin: 20px 0;
 }
-.list {
-  list-style: square;
+
+.btn, .save-btn {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background 0.3s;
 }
-#msg{
-   font-family: monospace;
+
+.btn:hover, .save-btn:hover {
+  background: #555;
 }
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 900px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #0077cc;
+  color: white;
+  font-weight: 600;
+}
+
+td {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+td button {
+  margin-left: 8px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+td button:hover {
+  background: #388E3C;
+}
+
+.done {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+#status-msg {
+  font-size: 0.9rem;
+  margin-top: 10px;
+  color: #0077cc;
+}
+
+/* Temas */
 .light-theme {
-  color: #000000;
-  background: #FFC0CBff;
+  background: #fce4ec;
+  color: #333;
 }
+
 .dark-theme {
-  color: #FFC0CBff;
-  background: #000000;
+  background: #1e1e1e;
+  color: #f5f5f5;
 }
-:root{
-   --green:#FFC0CBff;
-   --white:#ffffff;
-   --black:#000000;
+
+.dark-theme th {
+  background-color: #333;
 }
-*{
-   color:var(--fontColor);
-   font-family:helvetica;
+
+.dark-theme td {
+  background-color: #2b2b2b;
 }
-body{
-   background:var(--bg);
+
+.dark-theme .btn,
+.dark-theme .save-btn {
+  background: #f5f5f5;
+  color: #111;
 }
-.light-theme{
-   --bg: var(--pink);
-   --fontColor: var(--black);
-   --btnBg:var(--black);
-   --btnfontColor:var(--white);
+
+.dark-theme .btn:hover,
+.dark-theme .save-btn:hover {
+  background: #ddd;
 }
-.dark-theme{
-   --bg: var(--black);
-   --fontColor: var(--pink);
-   --btnBg:var(--white);
-   --btnfontColor:var(--black);
-}
-.btn{
-   position: absolute;
-   top: 20px;
-   left: 250px;
-   height: 50px;
-   width: 50px;
-   border-radius: 50%;
-   border: none;
-   color:var(--btnfontColor);
-   background-color:var(--btnBg);
-}
-.btn:focus{outline-style:none;}
